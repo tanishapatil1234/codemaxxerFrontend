@@ -5,7 +5,7 @@ layout: post
 title: Helper AI
 author: Finn C
 ---
-<h1>Note: everything works, but backend needs to be ran locally</h1>
+<p>Note: everything works, but backend needs to be ran locally, also change token in backend, gonna figure out a different way but for rn follow this guide <a href="https://github.com/LarryDpk/Google-Bard?tab=readme-ov-file#get-the-token-from-browser">link</a></p>
 
 <div class="chatbox">
     <div class="chat" id="chat">
@@ -48,6 +48,8 @@ author: Finn C
             },
             body: JSON.stringify(fetch_data)
         };
+
+        input.innerHTML = "";
 
         // Post
         await fetch(AI_URL, Headers)
