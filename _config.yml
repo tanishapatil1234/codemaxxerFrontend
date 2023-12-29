@@ -3,7 +3,7 @@ description: "chat check this out"
 owner_name: Finn C, Theo H, Tanisha P, Justin N, Luna I, Rachit J
 github_username: FTTJLR
 github_repo: "FTTJLR-Frontend"
-baseurl: "/home"
+baseurl: "/FTTJLR-Frontend"
 remote_theme: jekyll/minima
 minima:
 # remote_theme: pages-themes/dinky@v0.2.0
