@@ -25,3 +25,22 @@
 // @import "minima/hamilton/skins/midnight";
 // @import "minima/hamilton/skins/sunrise";
 // @import "minima/hamilton/skins/sunset"
+
+.chatbox {
+    padding: 25px;
+}
+.send {
+    width: 10%;
+    display: inline;
+}
+.User {
+    text-align: right;
+}
+.AI {
+    text-align: left;
+}
+.AI-input {
+    width: 89%;
+    border-radius: 5px;
+    display: inline;
+}
