@@ -2,9 +2,9 @@
 toc: true
 comments: true
 layout: base
-title: map
+title: island mini map
 author: luna
-permalink: /map
+permalink: /islandmap
 ---
 
 <style>
