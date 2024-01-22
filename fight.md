@@ -33,15 +33,19 @@ permalink: /fight
 
     .controller {
         display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
+        justify-content: space-between; 
+        align-items: center;
+        background-color: #f7f7f7; 
+        padding: 10px; 
+        border-radius: 8px;
+        margin-top: 15px;
     }
 
     .move {
-        background-color: #4CAF50;
-        color: white;
+        background-color: #e0e0e0; 
+        color: #333; 
         text-align: center;
-        padding: 20px;
+        padding: 10px;
         border-radius: 8px;
         width: 150px;
         cursor: pointer;
@@ -49,16 +53,17 @@ permalink: /fight
     }
 
     .move:hover {
-        background-color: #45a049;
+        background-color: #ccc; 
     }
 
     h1 {
         margin: 0;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     p {
         margin: 5px 0 0;
+        font-size: 0.9em; 
     }
 
     b {
