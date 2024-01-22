@@ -104,10 +104,10 @@ permalink: /fight
 
     function Question() {
         var responseBox = document.getElementById("response-box");
-        let question = "What's 2+2";
-        let answer = "4";
+        let question = "What kind of code looks like 0010110101110";
+        let answer = "binary";
 
-        let response = prompt(question);
+        let response = prompt(question.toLowerCase());
         if (response == answer) {
             responseBox.innerHTML = "You Win";
         } else {
