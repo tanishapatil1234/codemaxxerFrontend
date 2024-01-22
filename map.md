@@ -6,6 +6,7 @@ title: map
 author: luna and tanisha 
 permalink: /map
 ---
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,8 +29,8 @@ permalink: /map
 
         .island {
             position: absolute;
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             background-image: url('images/island.png'); /* Path to your island image */
             background-size: cover;
             display: flex;
@@ -40,10 +41,10 @@ permalink: /map
         }
 
         .island-name {
-            color: #fff;
+            color: rgb(89, 59, 7); /* Black text color */
+            font-family:'Courier New', Courier, monospace;
             font-weight: bold;
-            font-size: 12px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
             text-align: center;
             position: absolute;
             bottom: -20px; /* Adjust the distance between the island and the name */
@@ -51,12 +52,17 @@ permalink: /map
             transition: color 0.3s;
         }
 
+        .island-name a {
+            color: inherit;
+            text-decoration: none;
+        }
+
         .island:hover {
-            font-family: 'Courier New', Courier, monospace;
+            /* Add hover styles if needed */
         }
 
         .island:hover .island-name {
-            color: #CD853F; 
+            color: #CD853F; /* Change text color on hover */
         }
     </style>
 </head>
