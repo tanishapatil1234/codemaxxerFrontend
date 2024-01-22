@@ -1,9 +1,9 @@
-title: Duolingo but for coding
-description: "chat check this out"
+title: Rift Game Dev
+description: "A fun way to study for APCSP and APCSA"
 owner_name: Finn C, Theo H, Tanisha P, Justin N, Luna I, Rachit J
-github_username: FTTJLR
-github_repo: "FTTJLR-Frontend"
-baseurl: "/FTTJLR-Frontend"
+github_username: Codemaxxers
+github_repo: "codemaxxerFrontend"
+baseurl: "/codemaxxerFrontend"
 remote_theme: jekyll/minima
 minima:
 # remote_theme: pages-themes/dinky@v0.2.0
