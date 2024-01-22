@@ -63,16 +63,16 @@ permalink: /map
 <body>
     <div class="map">
         <div class="island" style="top: 100px; left: 150px;">
-            <div class="island-name">Chemistry Island</div>
+            <div class="island-name"><a href="https://codemaxxers.github.io/codemaxxerFrontend/islandmap">Chemistry Island</a></div>
         </div>
-        <div class="island" style="top: 220px; left: 450px;">
-            <div class="island-name">Calculus Island</div>
+        <div class="island" style="top: 250px; left: 400px;">
+            <div class="island-name"><a href="https://codemaxxers.github.io/codemaxxerFrontend/islandmap">Calculus Island</a></div>
         </div>
         <div class="island" style="top: 400px; left: 250px;">
-            <div class="island-name">CSA Island</div>
+            <div class="island-name"><a href="https://codemaxxers.github.io/codemaxxerFrontend/islandmap">CSA Island</a></div>
         </div>
-        <div class="island" style="top: 500px; left: 550px;">
-            <div class="island-name">Physics Island</div>
+        <div class="island" style="top: 600px; left: 500px;">
+            <div class="island-name"><a href="https://codemaxxers.github.io/codemaxxerFrontend/islandmap">Physics Island</a></div>
         </div>
     </div>
 </body>
