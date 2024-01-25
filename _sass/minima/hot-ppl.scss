@@ -1,18 +1,11 @@
-/* Import Hellvectia font */
-@font-face {
-    font-family: 'Hellvectia';
-    src: url('https://fonts.cdnfonts.com/css/helvetica-neue-55') format('woff2');
-    /* Add additional formats if needed */
-  }
-  
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #F3F3F3;
-    color: #333;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
+  font: 100% Helvetica, sans-serif;
+  background-color: #F3F3F3;
+  color: #333;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
 }
 /* Import Google font - Poppins */
 
@@ -216,7 +209,9 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   width: 40px;
   margin-left: 20px;
 }
-
+.data_text {
+  margin-left: 10px;
+}
 /* Responsive */
 @media screen and (max-width: 1100px) {
   .navbar {
