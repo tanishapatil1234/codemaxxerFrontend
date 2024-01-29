@@ -194,18 +194,18 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 
 /* Navbar */
-.navbar {
-  max-width: 500px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 60%;
-  transform: translateX(-50%);
-  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #8691d1 100%);
-  padding: 10px 20px;
-  border-radius: 0 0 8px 8px;
-  justify-content: space-between;
-}
+// .navbar {
+//   max-width: 500px;
+//   width: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 60%;
+//   transform: translateX(-50%);
+//   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #8691d1 100%);
+//   padding: 10px 20px;
+//   border-radius: 0 0 8px 8px;
+//   justify-content: space-between;
+// }
 
 #sidebar-open {
   font-size: 30px;
