@@ -9,6 +9,21 @@ body {
 }
 /* Import Google font - Poppins */
 
+.P-contain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+.P-contain div {
+  width: calc(33.33% - 20px); /* Adjust for spacing */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +32,6 @@ body {
 }
 body {
   min-height: 100vh;
-  background: #eef5fe;
 }
 /* Pre css */
 .flex {
@@ -35,6 +49,11 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap onto multiple lines */
+}
+
 
 h1,h2,h3,h4,h5,h6,p,ul,li {
     font-family: Arial, Helvetica, sans-serif;
@@ -47,10 +66,10 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   left: 0;
   height: 100%;
   width: 270px;
-  background: #202124;
+  background: #4A4744;
   padding: 15px 1px;
   padding-right: 10px;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.567);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0);
   transition: all 0.4s ease;
 }
 .sidebar.close {
@@ -61,7 +80,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 .logo_name {
   font-size: 22px;
-  color: #ffffff;
+  color: black;
   font-weight: 500px;
   transition: all 0.3s ease;
 }
@@ -110,11 +129,10 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 .menu_title .line {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   height: 3px;
   width: 20px;
   border-radius: 25px;
-  background: #aaa;
+  background: black;
   transition: all 0.3s ease;
 }
 .menu_title .line {
@@ -130,11 +148,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   text-decoration: none;
   border-radius: 8px;
   margin-bottom: 8px;
-  color: #707070;
+  color: black !important;
+  transition: all 0.4s ease;
 }
 .link:hover {
   color: #fff;
-  background-color: #2D2D2E;
+  background-color: #F6F6F6;
+  transition: all 0.4s ease;
 }
 .link span {
   white-space: nowrap;
@@ -150,23 +170,23 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 
 .title {
-  color: #ffffff !important;
+  color: black !important;
 }
 
 .line {
-    background: #ffffff !important;
-    color: #ffffff !important;
+    background: black !important;
+    color: black !important;
 }
 
 .sidebar_profile {
   padding-top: 15px;
   margin-top: 15px;
   gap: 15px;
-  border-top: 2px solid rgba(255, 255, 255, 0.567);
+  border-top: 2px solid black;
 }
 .sidebar_profile .name {
   font-size: 18px;
-  color: #FFFFFF;
+  color: black !important;
 }
 .sidebar_profile .email {
   font-size: 15px;
@@ -181,11 +201,12 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   top: 0;
   left: 60%;
   transform: translateX(-50%);
-  background: #202124;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #8691d1 100%);
   padding: 10px 20px;
   border-radius: 0 0 8px 8px;
   justify-content: space-between;
 }
+
 #sidebar-open {
   font-size: 30px;
   color: #333;
