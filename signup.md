@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: star
 search_exclude: true
 permalink: signup
 --- 
