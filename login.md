@@ -21,7 +21,7 @@ permalink: login
     <h3>Login</h3>
     <h5>Email</h5>
     <input id="emailInput">
-    <br>    
+    <br>
     <h5>Password</h5>
     <input id="passwordInput">
     <br>
@@ -59,7 +59,6 @@ permalink: login
         var requestOptions = {
             method: 'POST',
             headers: myHeaders,
-            credentials: 'include',  // Include this line for cross-origin requests with credentials
             body: raw,
             redirect: 'follow'
         };
@@ -91,7 +90,7 @@ permalink: login
         })
         .then(result => {
             console.log(result);
-            window.location.href = "/profile";
+            window.location.href = "profile";
         })
         .catch(error => console.error('Error during login:', error));
     });
