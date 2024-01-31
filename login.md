@@ -19,26 +19,82 @@ permalink: login
 
 <div class="card">
     <h3>Login</h3>
-    <h5>Username</h5>
-    <input>
+    <h5>Email</h5>
+    <input id="emailInput">
     <br>    
     <h5>Password</h5>
-    <input>
+    <input id="passwordInput">
     <br>
     <br>
-    <button>Login</button>
+    <button id="loginButton">Login</button>
     <button id="transfer">Sign Up</button>
 </div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
 
-    var transferButton = document.getElementById("transfer");
+        var transferButton = document.getElementById("transfer");
 
-    transferButton.addEventListener("click", function() {
-        window.location.href = "{{site.baseurl}}/signup";
+        transferButton.addEventListener("click", function() {
+            window.location.href = "{{site.baseurl}}/signup";
+        });
     });
-});
+
+    var loginButton = document.getElementById("loginButton");
+
+    loginButton.addEventListener("click", function(){
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({
+            "email": document.getElementById("emailInput").value,
+            "password": document.getElementById("passwordInput").value
+
+            // For quick testing
+            //"email": "toby@gmail.com",
+            //"password": "123Toby!"
+        });
+        console.log(raw);
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            credentials: 'include',  // Include this line for cross-origin requests with credentials
+            body: raw,
+            redirect: 'follow'
+        };
+
+        fetch("https://codemaxxers.stu.nighthawkcodingsociety.com/authenticate", requestOptions)
+        .then(response => {
+            if (!response.ok) {
+                const errorMsg = 'Login error: ' + response.status;
+                console.log(errorMsg);
+
+                switch (response.status) {
+                    case 401:
+                        alert("Incorrect username or password");
+                        break;
+                    case 403:
+                        alert("Access forbidden. You do not have permission to access this resource.");
+                        break;
+                    case 404:
+                        alert("User not found. Please check your credentials.");
+                        break;
+                    // Add more cases for other status codes as needed
+                    default:
+                        alert("Login failed. Please try again later.");
+                }
+
+                return Promise.reject('Login failed');
+            }
+            return response.text()
+        })
+        .then(result => {
+            console.log(result);
+            window.location.href = "/profile";
+        })
+        .catch(error => console.error('Error during login:', error));
+    });
 </script>
 
 <style>
