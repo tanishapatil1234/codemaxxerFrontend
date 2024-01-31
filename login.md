@@ -59,6 +59,7 @@ permalink: login
         var requestOptions = {
             method: 'POST',
             headers: myHeaders,
+            credentials: 'include',
             body: raw,
             redirect: 'follow'
         };
@@ -90,7 +91,7 @@ permalink: login
         })
         .then(result => {
             console.log(result);
-            window.location.href = "profile";
+            // window.location.href = "profile";
         })
         .catch(error => console.error('Error during login:', error));
     });
