@@ -5,14 +5,6 @@ canvas.width = 1024
 canvas.height = 576
 
 
-canvas.addEventListener('click', function(event) {
-    // Check if the click occurred in the top half of the canvas
-    if (event.clientY < canvas.height / 2) {
-        // Display alert message when canvas top half is clicked
-        alert('You clicked the top half of the canvas!');
-    }
-});
-
 const collisionsMap = []
 for (let i = 0; i < collisions.length; i += 70) {
   collisionsMap.push(collisions.slice(i, 70 + i))
@@ -89,7 +81,7 @@ charactersMap.forEach((row, i) => {
           },
           scale: 3,
           animate: true,
-          dialogue: ['...', 'Hey mister, have you seen my Doggochu?']
+          dialogue: ['...', 'Hey mister, Answer my question to gain points!']
         })
       )
     }
